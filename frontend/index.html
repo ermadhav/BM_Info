@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="formContainer">
+        <h2>📋 Create Your Form</h2>
+        <input type="text" id="formTitle" placeholder="Enter Form Title">
+        
+        <div id="fields"></div>
+
+        <button class="add-btn" onclick="addField('text')">➕ Add Text Field</button>
+        <button class="add-btn" onclick="addField('checkbox')">✅ Add Checkbox</button>
+        <button class="add-btn" onclick="addField('dropdown')">🔽 Add Dropdown</button>
+
+        <br>
+        <button id="saveFormBtn" onclick="saveForm()">💾 Save Form</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
